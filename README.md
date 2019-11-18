@@ -1,8 +1,8 @@
-#### Description
+## Description
 
 hack nyu 2020 static website that display event data, sponsor info, common FAQ and schedule.
 
-#### Development setup
+## Development setup
 
 - HTML, SCSS (CSS), JS
 - install Visual studio is recommanded. (https://code.visualstudio.com/download) 
@@ -11,15 +11,15 @@ hack nyu 2020 static website that display event data, sponsor info, common FAQ a
 - Open the html file with live server 
 - start watch sass file so scss will be converted into css.
 
-#### Test
+## Test
 
 VIsual test on desktop view and mobile view
 
-#### Deployment
+## Deployment
 
 To be updated.
 
-#### Useful resource
+## Useful resource
 
 The starting 40 minutes cover development set up
 
@@ -29,7 +29,7 @@ We will try to follow CSS Block element modifier convention to make the css name
 
 https://seesparkbox.com/foundry/bem_by_example
 
-#### 
+###
 
 
 
