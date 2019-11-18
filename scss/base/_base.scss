@@ -14,9 +14,42 @@
 }
 
 body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: #FFE29D;
   font-family: 'Sofia-Pro';
+  li {
+    list-style: none;
+  }
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Cooper-Regular';
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  animation: fadein 1s ease-in-out;
+}
+
+.orange {
+  color: $orange;
+}
+
+.tab {
+  animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(1.2);;
+  } to {
+    opacity: 1;
+  }
 }

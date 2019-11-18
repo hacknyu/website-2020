@@ -1,0 +1,47 @@
+.faq {
+    display: flex;
+    align-items: center;
+    margin-right:10%;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.flex-container {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 35%;
+    min-width: 350px;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+}
+
+  .faq-img-container{
+      position: relative;
+      width:100%;
+      &-img {
+        width:5rem;
+        height:5rem;
+        position: absolute;
+        right: 15rem;
+      }
+  }
+
+
+@media screen and (max-width: 768px) {
+    .faq {
+        h1 {
+            text-align: center;
+        }
+    }
+    .faq-img-container {
+        &-img {
+            right: 2rem;
+        }
+    }
+
+}
