@@ -1,0 +1,37 @@
+@mixin typography($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+}
+
+.headline {
+    @include typography( bold, $size5);
+}
+
+.title {
+    @include typography( bold, $size4);
+}
+
+.subheader {
+    @include typography( regular, $size3);
+}
+
+.quote {
+    @include typography( regular, $size2);
+    font-style: italic;
+}
+
+.large-body {
+    @include typography( bold, $size2);
+}
+
+.body {
+    @include typography( regular, $size2);
+}
+
+.secondary-body {
+    @include typography( regular, $size1);
+}
+
+.button-text {
+    @include typography( bold,  $size2);
+}

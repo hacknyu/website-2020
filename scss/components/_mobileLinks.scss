@@ -1,0 +1,49 @@
+.mobile-links {
+    display: none;
+    height: 15rem;
+    width: 100%;
+    background-color: black;
+    border-top-left-radius: $size5;
+    border-top-right-radius: $size5;
+    margin-top: 10rem;
+
+    h5 {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    &-column {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-right: 2rem;
+
+            li {
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+                color: $white;
+                font-weight: 200;
+            }
+        }
+    }
+
+    &-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-links  {
+        display: flex;
+    }
+}

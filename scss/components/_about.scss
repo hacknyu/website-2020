@@ -1,0 +1,41 @@
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    margin-right:15%;
+    margin-left: 10%;
+    margin-top:10%;
+
+    p{
+        margin: 0;
+        margin-top:3rem;
+    }
+
+    &-img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .home {
+        margin-top:10vh;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .home__hide__small {
+        display: none;
+    }
+
+    .home__hide__large{
+        display: block;
+    }
+}
