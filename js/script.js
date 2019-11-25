@@ -29,27 +29,12 @@ const toggletNavBar = () => {
 
     navLinks.forEach(function(link, index){
         link.addEventListener("click", () => {
-            switch (index) {
-                case 0:
-                    sections.forEach((section) => {
-                        section.style.display = 'none'
+            sections.forEach((section) => {
+                    section.style.display = 'none'
                     })
-                    sections[index].style.display = 'flex'
-                case 1:
-                    sections.forEach((section) => {
-                        section.style.display = 'none'
-                    })
-                    sections[index].style.display = 'flex'
-                    break
-                case 4:
-                    sections.forEach((section) => {
-                        section.style.display = 'none'
-                    })
-                    sections[2].style.display = 'flex'
-                    break
-                default:
-                    break
-            }
+            sections[index].style.display = 'flex'
+
+            
             navLinks.forEach(function(l, ind){
                 navLinks[ind].classList.remove("navlink-active-orange")
             })
