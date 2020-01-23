@@ -86,6 +86,7 @@ h1, h2, h3, h4 {
 }
 
 .subheader {
+  font-family: 'Sofia-Pro-Regular';
   font-weight: regular;
   font-size: 2rem;
 }
@@ -112,6 +113,7 @@ h1, h2, h3, h4 {
 }
 
 .button-text {
+  font-family: 'Sofia-Pro-Regular';
   font-weight: bold;
   font-size: 1.4rem;
 }
@@ -272,7 +274,7 @@ nav {
           align-items: center;
   height: 50vh;
   margin-top: 20vh;
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 .home h3 {
