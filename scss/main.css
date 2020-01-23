@@ -86,7 +86,7 @@ h1, h2, h3, h4 {
 }
 
 .subheader {
-  font-family: 'Sofia-Pro-Regular';
+  font-family: 'Sofia-Pro';
   font-weight: regular;
   font-size: 2rem;
 }
@@ -113,7 +113,7 @@ h1, h2, h3, h4 {
 }
 
 .button-text {
-  font-family: 'Sofia-Pro-Regular';
+  font-family: 'Sofia-Pro';
   font-weight: bold;
   font-size: 1.4rem;
 }
