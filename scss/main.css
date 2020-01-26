@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Cooper-Regular';
-  src: url("../assets/fonts/Cooper-Medium.ttf");
+  src: url("./fonts/Cooper-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Sofia-Pro';
-  src: url("../assets/fonts/Sofia-Pro-Regular.ttf");
+  src: url("./fonts/Sofia-Pro-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Sofia-Pro-Bold';
-  src: url("../assets/fonts/Sofia-Pro-Bold.ttf");
+  src: url("./fonts/Sofia-Pro-Bold.ttf");
 }
 
 body {
@@ -86,7 +86,6 @@ h1, h2, h3, h4 {
 }
 
 .subheader {
-  font-family: 'Sofia-Pro';
   font-weight: regular;
   font-size: 2rem;
 }
@@ -113,9 +112,19 @@ h1, h2, h3, h4 {
 }
 
 .button-text {
-  font-family: 'Sofia-Pro';
   font-weight: bold;
   font-size: 1.4rem;
+}
+
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 10;
 }
 
 nav {
@@ -274,7 +283,7 @@ nav {
           align-items: center;
   height: 50vh;
   margin-top: 20vh;
-  margin-left: 3%;
+  margin-left: 10%;
 }
 
 .home h3 {
@@ -329,23 +338,6 @@ nav {
   .home__hide__large {
     display: block;
   }
-}
-
-.schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50vh;
-  margin-right: 15%;
-  margin-left: 10%;
-  margin-top: 10%;
 }
 
 .about {
