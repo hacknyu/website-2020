@@ -27,7 +27,7 @@ body li {
   list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, ul, li {
   font-family: 'Cooper-Regular';
   margin: 0;
   padding: 0;
@@ -114,6 +114,10 @@ h1, h2, h3, h4 {
 .button-text {
   font-weight: bold;
   font-size: 1.4rem;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #mlh-trust-badge {
@@ -274,6 +278,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .nav-links li span {
+    color: black !important;
+  }
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +347,62 @@ nav {
   }
   .home__hide__large {
     display: block;
+  }
+}
+
+.schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.schedule section {
+  width: 1000px;
+}
+
+.schedule h4, .schedule li {
+  margin: 0.8rem 0;
+}
+
+.schedule li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.schedule span {
+  text-align: left;
+}
+
+.schedule .small-grow {
+  width: 20%;
+}
+
+.schedule .medium-grow {
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule {
+    text-align: center;
+  }
+  .schedule span {
+    text-align: center;
+  }
+  .schedule section {
+    width: 500px;
+    margin: 0 auto;
   }
 }
 

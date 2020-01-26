@@ -104,3 +104,9 @@ nav {
         transform: translateX(0px);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links li span{
+        color: black !important;
+    }
+}
