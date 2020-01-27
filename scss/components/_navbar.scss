@@ -16,7 +16,7 @@ nav {
     height: 70%;
     text-align: right;
 
-    span {
+    a {
         text-decoration: none;
         letter-spacing: 3px;
         font-size: 20px;
@@ -51,10 +51,18 @@ nav {
         display: flex;
         flex-direction: column;
         width: 20%;
-        span {
+        a {
             color: white;
             font-size: 1rem;
             align-items: center;
+        }
+
+        a:hover {
+            border-right: 5px solid $orange;
+            padding-right: 3px;
+            color: $orange !important;
+            transform: scale(1.5);
+            transition: all 0.3s;
         }
     }
     .body-container {
@@ -86,6 +94,8 @@ nav {
     transition: all 0.3s;
 }
 
+
+
 .navlink-active-orange {
     border-right: 5px solid $orange;
     padding-right: 3px;
@@ -102,5 +112,11 @@ nav {
     } to {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links li a{
+        color: black !important;
     }
 }

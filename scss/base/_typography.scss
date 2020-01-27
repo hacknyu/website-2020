@@ -35,3 +35,7 @@
 .button-text {
     @include typography( bold,  $size2);
 }
+
+.bold {
+    font-weight: bold;
+}
