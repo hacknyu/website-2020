@@ -114,6 +114,7 @@ ul {
 
 .button-text {
   font-weight: bold;
+  font-family: 'Sofia-Pro';
   font-size: 1.4rem;
 }
 
@@ -144,7 +145,7 @@ nav {
   width: 20rem;
   height: 50vh;
   margin-top: 25vh;
-  margin-left: 10%;
+  margin-left: 3%;
   min-height: 25rem;
 }
 
