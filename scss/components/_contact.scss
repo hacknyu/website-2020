@@ -1,0 +1,54 @@
+.contact {
+    display: flex;
+    align-items: center;
+    margin-right:10%;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 10%;
+
+    section {
+        width: 1000px;
+    }
+
+    h4, li {
+        margin: 0.8rem 0;
+    }
+
+    li {
+        display: flex;
+        width: 80%;
+    }
+
+    span {
+        text-align: left;
+    }
+
+    .small-grow {
+       width:20%;
+    }
+
+
+    .medium-grow {
+        width:40%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        text-align: center;
+
+        span {
+            text-align: center;
+        }
+
+        section {
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+
