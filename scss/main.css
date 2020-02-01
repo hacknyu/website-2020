@@ -206,7 +206,6 @@ nav {
             align-items: center;
   }
   .nav-links a:hover {
-    border-right: 5px solid #EA591A;
     padding-right: 3px;
     color: #EA591A !important;
     -webkit-transform: scale(1.5);
@@ -226,9 +225,18 @@ nav {
     left: 0;
     margin-top: 0;
   }
+  nav ul {
+    background: black;
+    padding: 2rem;
+    margin: 0;
+  }
+  .nav-links {
+    opacity: 0;
+  }
   .nav-links li {
     opacity: 0;
     text-align: center;
+    color: white;
   }
   .nav-burger {
     display: block;
@@ -245,6 +253,7 @@ nav {
           transform: translateX(0%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  opacity: 1;
 }
 
 .navlink-active-orange {
@@ -285,7 +294,8 @@ nav {
 
 @media screen and (max-width: 768px) {
   .nav-links li a {
-    color: black !important;
+    color: white !important;
+    z-index: 100;
   }
 }
 
