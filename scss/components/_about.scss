@@ -22,13 +22,19 @@
 
 @media screen and (max-width: 768px) {
 
-    .home {
+    .about {
         margin-top:10vh;
         flex-direction: column;
         align-items: center;
         height: 50vh;
-        width: 100%;
-        margin-left: 0;
+        width: 80%;
+        margin-bottom: 20vh;
+
+        &-img {
+            width: 10rem;
+            height: 10rem;
+            display: none;
+        }
     }
 
     .home__hide__small {
@@ -38,4 +44,5 @@
     .home__hide__large{
         display: block;
     }
+
 }

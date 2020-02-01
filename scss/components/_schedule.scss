@@ -37,13 +37,20 @@
 @media screen and (max-width: 768px) {
     .schedule {
         text-align: center;
+        margin-top: 10vh;  
+        margin-bottom: 5vh;
+        width: 100vw;
+        margin-left: 0%;
 
+        padding-left: 2rem;
+        padding-right: 2rem;
         span {
-            text-align: center;
+            text-align: right;
         }
 
         section {
-            width: 500px;
+            width:100%;
+
             margin: 0 auto;
         }
     }

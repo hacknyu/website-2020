@@ -344,8 +344,8 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     height: 50vh;
-    width: 100%;
-    margin-left: 0;
+    width: 80%;
+    margin-bottom: 20vh;
   }
   .home__hide__small {
     display: none;
@@ -401,12 +401,18 @@ nav {
 @media screen and (max-width: 768px) {
   .schedule {
     text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 100vw;
+    margin-left: 0%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .schedule span {
-    text-align: center;
+    text-align: right;
   }
   .schedule section {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -439,7 +445,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .home {
+  .about {
     margin-top: 10vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -449,8 +455,13 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     height: 50vh;
-    width: 100%;
-    margin-left: 0;
+    width: 80%;
+    margin-bottom: 20vh;
+  }
+  .about-img {
+    width: 10rem;
+    height: 10rem;
+    display: none;
   }
   .home__hide__small {
     display: none;
@@ -505,11 +516,21 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .faq {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
   .faq h1 {
     text-align: center;
   }
-  .faq-img-container-img {
-    right: 2rem;
+  .faq-img-container {
+    display: none;
+  }
+  .flex-item {
+    width: 35%;
+    min-width: 350px;
+    padding: 0.5rem;
   }
 }
 
@@ -526,11 +547,13 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15%;
-  margin-left: 10%;
+  margin-left: 5%;
+  text-align: left;
 }
 
-.sponsors section {
-  width: 1000px;
+.sponsors-img {
+  width: 15rem;
+  height: 15rem;
 }
 
 .sponsors h4, .sponsors li {
@@ -558,14 +581,16 @@ nav {
 
 @media screen and (max-width: 768px) {
   .sponsors {
+    margin-top: 15vh;
+    word-wrap: break-word;
     text-align: center;
+  }
+  .sponsors-img {
+    width: 20rem;
+    height: 20rem;
   }
   .sponsors span {
     text-align: center;
-  }
-  .sponsors section {
-    width: 500px;
-    margin: 0 auto;
   }
 }
 
@@ -582,11 +607,13 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15%;
-  margin-left: 10%;
+  margin-left: 5%;
+  text-align: left;
 }
 
-.contact section {
-  width: 1000px;
+.contact-img {
+  width: 15rem;
+  height: 15rem;
 }
 
 .contact h4, .contact li {
@@ -614,31 +641,33 @@ nav {
 
 @media screen and (max-width: 768px) {
   .contact {
+    margin-top: 15vh;
+    word-wrap: break-word;
     text-align: center;
+  }
+  .contact-img {
+    width: 20rem;
+    height: 20rem;
   }
   .contact span {
     text-align: center;
-  }
-  .contact section {
-    width: 500px;
-    margin: 0 auto;
   }
 }
 
 .mobile-links {
   display: none;
-  height: 15rem;
+  height: 11rem;
   width: 100%;
   background-color: black;
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
-  margin-top: 10rem;
 }
 
 .mobile-links h5 {
   color: white;
   font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .mobile-links-column {
@@ -651,6 +680,8 @@ nav {
           flex-direction: row;
   width: 100%;
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-links-column ul {
@@ -661,10 +692,16 @@ nav {
 
 .mobile-links-column ul li {
   padding: 0;
-  margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: 200;
+  cursor: pointer;
+}
+
+.mobile-links-column ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 .mobile-links-row {

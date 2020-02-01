@@ -4,10 +4,13 @@
     margin-right:10%;
     flex-direction: column;
     margin-top: 15%;
-    margin-left: 10%;
+    margin-left: 5%;
+    text-align: left;
 
-    section {
-        width: 1000px;
+
+    &-img {
+        width: 15rem;
+        height: 15rem;
     }
 
     h4, li {
@@ -36,15 +39,17 @@
 
 @media screen and (max-width: 768px) {
     .contact {
+        margin-top: 15vh;
+        word-wrap: break-word;
         text-align: center;
+
+        &-img {
+            width: 20rem;
+            height: 20rem;
+        }
 
         span {
             text-align: center;
-        }
-
-        section {
-            width: 500px;
-            margin: 0 auto;
         }
     }
 }
