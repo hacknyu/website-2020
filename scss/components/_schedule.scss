@@ -7,7 +7,7 @@
     margin-left: 10%;
 
     section {
-        width: 1000px;
+        width: 800px;
     }
 
     h4, li {
@@ -36,21 +36,27 @@
 
 @media screen and (max-width: 768px) {
     .schedule {
-        text-align: center;
         margin-top: 10vh;  
         margin-bottom: 5vh;
-        width: 100vw;
-        margin-left: 0%;
+        width: 80%;
+        margin-left: 10%;
 
-        padding-left: 2rem;
-        padding-right: 2rem;
-        span {
-            text-align: right;
+        li {
+            display: inline-flex;
         }
+
+    .small-grow {
+        width:20%;
+     }
+ 
+ 
+     .medium-grow {
+         width:100px;
+     }
 
         section {
             width:100%;
-
+            text-align: center;
             margin: 0 auto;
         }
     }
