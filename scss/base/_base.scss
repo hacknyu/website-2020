@@ -1,16 +1,11 @@
 @font-face {
   font-family: 'Cooper-Regular';
-  src: url('./fonts/Cooper-Regular.ttf');
+  src: url('../assets/fonts/Cooper-Medium.ttf');
 }
 
 @font-face {
   font-family: 'Sofia-Pro';
-  src: url('./fonts/Sofia-Pro-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Sofia-Pro-Bold';
-  src: url('./fonts/Sofia-Pro-Bold.ttf');
+  src: url('../assets/fonts/Sofia-Pro-Regular.ttf');
 }
 
 body {
@@ -26,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, ul, li {
-  font-family: 'Cooper-Regular';
+  font-family: 'Sofia-Pro';
   margin: 0;
   padding: 0;
 }

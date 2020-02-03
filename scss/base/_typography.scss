@@ -34,6 +34,7 @@
 
 .button-text {
     @include typography( bold,  $size2);
+    font-family: "Sofia-Pro";
 }
 
 .bold {
