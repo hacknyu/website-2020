@@ -20,10 +20,14 @@ body {
   }
 }
 
-h1, h2, h3, h4, ul, li {
-  font-family: 'Sofia-Pro';
+h1, h2, h3, h4, {
+  font-family: 'Cooper-Regular';
   margin: 0;
   padding: 0;
+}
+
+ul, li  {
+  font-family: 'Sofia-Pro';
 }
 
 .body-container {

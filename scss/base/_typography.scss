@@ -13,6 +13,7 @@
 
 .subheader {
     @include typography( regular, $size3);
+    font-family: "Sofia-Pro";
 }
 
 .quote {
