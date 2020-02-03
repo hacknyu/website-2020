@@ -1,8 +1,8 @@
-.home {
+.volunteer {
     display: flex;
     align-items: center;
     margin-top:20vh;
-    margin-left: 3vw;
+    margin-left: 5vw;
 
     h3 {
         margin-top: 1rem;
@@ -38,19 +38,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    .home {
+    .volunteer  {
         margin-top:10vh;
         flex-direction: column;
         align-items: center;
         width: 80%;
+        margin-left: 10%;
         margin-bottom: 10vh;
         text-align: center;
-        margin-left: 10%;
-
+        
         button {
             width: 100%;
         }
-        
     }
 
     .home__hide__small {

@@ -3,10 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
     margin-right:15%;
     margin-left: 10%;
-    margin-top:10%;
+    margin-top:15%;
 
     p{
         margin: 0;
@@ -22,13 +21,16 @@
 
 @media screen and (max-width: 768px) {
 
-    .home {
+    .about {
         margin-top:10vh;
         flex-direction: column;
         align-items: center;
-        height: 50vh;
-        width: 100%;
-        margin-left: 0;
+        width: 80%;
+        margin-bottom: 10vh;
+
+        &-img {
+            display: none;
+        }
     }
 
     .home__hide__small {
@@ -38,4 +40,5 @@
     .home__hide__large{
         display: block;
     }
+
 }

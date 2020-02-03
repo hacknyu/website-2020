@@ -1,13 +1,16 @@
-.schedule {
+.sponsors {
     display: flex;
     align-items: center;
     margin-right:10%;
     flex-direction: column;
-    margin-top: 10%;
-    margin-left: 10vw;
+    margin-top: 15%;
+    margin-left: 5%;
+    text-align: left;
 
-    section {
-        width: 800px;
+
+    &-img {
+        width: 15rem;
+        height: 15rem;
     }
 
     h4, li {
@@ -35,29 +38,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    .schedule {
-        margin-top: 10vh;  
-        margin-bottom: 5vh;
-        width: 80%;
-        margin-left: 10%;
+    .sponsors {
+        margin-top: 15vh;
+        word-wrap: break-word;
+        text-align: center;
 
-        li {
-            display: inline-flex;
+        &-img {
+            width: 20rem;
+            height: 20rem;
         }
 
-    .small-grow {
-        width:20%;
-     }
- 
- 
-     .medium-grow {
-         width:100px;
-     }
-
-        section {
-            width:100%;
+        span {
             text-align: center;
-            margin: 0 auto;
         }
     }
 }

@@ -34,14 +34,20 @@
 
 @media screen and (max-width: 768px) {
     .faq {
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
         h1 {
             text-align: center;
         }
     }
     .faq-img-container {
-        &-img {
-            right: 2rem;
-        }
+        display: none;
+    }
+
+    .flex-item {
+        width: 100%;
+        padding: 0.5rem;
     }
 
 }

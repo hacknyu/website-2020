@@ -13,6 +13,7 @@
 
 .subheader {
     @include typography( regular, $size3);
+    font-family: "Sofia-Pro";
 }
 
 .quote {
@@ -34,6 +35,7 @@
 
 .button-text {
     @include typography( bold,  $size2);
+    font-family: "Sofia-Pro";
 }
 
 .bold {
