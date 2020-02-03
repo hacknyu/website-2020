@@ -18,14 +18,14 @@ body li {
   list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: "Cooper-Regular";
   margin: 0;
   padding: 0;
 }
 
-ul, li {
-  font-family: "Sofia-Pro";
+ul {
+  padding-inline-start: 0;
 }
 
 .body-container {
@@ -309,7 +309,7 @@ nav {
   margin-right: 10%;
   flex-direction: column;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 10vw;
 }
 .schedule section {
   width: 800px;
