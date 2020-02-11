@@ -377,23 +377,18 @@ nav {
   .home__hide__large {
     display: block; } }
 .faq {
-  display: flex;
-  align-items: center;
   margin-right: 10%;
-  flex-direction: column;
   margin-top: 10%;
   margin-left: 10%; }
 
 .flex-container {
-  padding: 0;
   display: flex;
   flex-wrap: wrap; }
 
 .flex-item {
-  width: 35%;
+  width: 25%;
   min-width: 350px;
-  padding-bottom: 1rem;
-  padding-top: 1rem; }
+  padding: 8px; }
 
 .faq-img-container {
   position: relative;
@@ -404,7 +399,7 @@ nav {
     position: absolute;
     right: 15rem; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .faq {
     text-align: center;
     margin-top: 10vh;
@@ -416,7 +411,8 @@ nav {
     display: none; }
 
   .flex-item {
-    width: 100%;
+    width: auto;
+    min-width: auto;
     padding: 0.5rem; } }
 .sponsors {
   display: flex;
