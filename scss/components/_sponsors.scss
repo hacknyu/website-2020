@@ -1,12 +1,10 @@
 .sponsors {
     display: flex;
-    align-items: center;
     margin-right:10%;
     flex-direction: column;
     margin-top: 15%;
     margin-left: 5%;
     text-align: left;
-
 
     &-img {
         width: 15rem;
@@ -29,7 +27,6 @@
     .small-grow {
        width:20%;
     }
-
 
     .medium-grow {
         width:40%;

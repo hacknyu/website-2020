@@ -414,7 +414,6 @@ nav {
     padding: 0.5rem; } }
 .sponsors {
   display: flex;
-  align-items: center;
   margin-right: 10%;
   flex-direction: column;
   margin-top: 15%;
@@ -447,7 +446,6 @@ nav {
       text-align: center; } }
 .contact {
   display: flex;
-  align-items: center;
   margin-right: 10%;
   flex-direction: column;
   margin-top: 15%;
