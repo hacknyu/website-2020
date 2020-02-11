@@ -48,6 +48,13 @@ ul {
     opacity: 0; }
   to {
     opacity: 1; } }
+.btn {
+  padding: 1em 2em;
+  color: white;
+  background: #EA591A;
+  font-family: inherit;
+  font-size: 18px; }
+
 .headline {
   font-weight: bold;
   font-size: 4rem; }
@@ -224,7 +231,6 @@ nav {
     background-color: #EA591A;
     border-radius: 0.5rem;
     font-weight: 300;
-    width: 10rem;
     color: #FFFFFF;
     border: none;
     cursor: pointer; }
