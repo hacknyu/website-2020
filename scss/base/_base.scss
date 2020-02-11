@@ -36,6 +36,12 @@ ul {
   animation: fadein 0.3s ease-in-out;
 }
 
+.content {
+  padding-left: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
 .orange {
   color: $orange;
 }

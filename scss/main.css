@@ -27,6 +27,11 @@ ul {
   align-items: center;
   animation: fadein 0.3s ease-in-out; }
 
+.content {
+  padding-left: 420px;
+  display: flex;
+  flex-direction: column; }
+
 .orange {
   color: #EA591A; }
 
@@ -90,6 +95,9 @@ ul {
   #mlh-trust-badge {
     right: 15px; } }
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;

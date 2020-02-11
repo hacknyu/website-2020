@@ -44,4 +44,4 @@ const toggletNavBar = () => {
 }
 
 navSlide()
-toggletNavBar()
+// toggletNavBar()
