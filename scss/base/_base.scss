@@ -34,12 +34,17 @@ ul {
   display: flex;
   align-items: center;
   animation: fadein 0.3s ease-in-out;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .content {
   padding-left: 420px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 }
 
 .orange {

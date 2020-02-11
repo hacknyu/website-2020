@@ -25,12 +25,17 @@ ul {
 .body-container {
   display: flex;
   align-items: center;
-  animation: fadein 0.3s ease-in-out; }
+  animation: fadein 0.3s ease-in-out;
+  width: 100vw;
+  overflow-x: hidden; }
 
 .content {
   padding-left: 420px;
   display: flex;
   flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .content {
+      padding-left: 0; } }
 
 .orange {
   color: #EA591A; }
@@ -52,12 +57,12 @@ ul {
   font-size: 3rem; }
 
 .subheader {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 2rem;
   font-family: "Sofia-Pro"; }
 
 .quote {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.4rem;
   font-style: italic; }
 
@@ -66,11 +71,11 @@ ul {
   font-size: 1.4rem; }
 
 .body {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.4rem; }
 
 .secondary-body {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.2rem; }
 
 .button-text {
@@ -474,8 +479,7 @@ nav {
     .contact span {
       text-align: center; } }
 .mobile-links {
-  display: none;
-  height: 11rem;
+  margin-top: 100px;
   width: 100%;
   background-color: black;
   border-top-left-radius: 4rem;
