@@ -32,6 +32,18 @@ ul {
   display: flex;
   align-items: center;
   animation: fadein 0.3s ease-in-out;
+  overflow-x: hidden;
+}
+
+.content {
+  padding-left: 420px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    padding-left: 0;
+  }
 }
 
 .orange {
@@ -50,6 +62,14 @@ ul {
     opacity: 1;
   }
 }
+.btn {
+  padding: 1em 2em;
+  color: white;
+  background: #EA591A;
+  font-family: inherit;
+  font-size: 18px;
+}
+
 .headline {
   font-weight: bold;
   font-size: 4rem;
@@ -61,13 +81,13 @@ ul {
 }
 
 .subheader {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 2rem;
   font-family: "Sofia-Pro";
 }
 
 .quote {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.4rem;
   font-style: italic;
 }
@@ -78,12 +98,12 @@ ul {
 }
 
 .body {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.4rem;
 }
 
 .secondary-body {
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.2rem;
 }
 
@@ -114,6 +134,9 @@ ul {
   }
 }
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
@@ -133,7 +156,6 @@ nav {
 }
 .nav-links a {
   text-decoration: none;
-  letter-spacing: 3px;
   font-size: 20px;
   font-weight: bold;
   color: black;
@@ -261,7 +283,6 @@ nav {
   background-color: #EA591A;
   border-radius: 0.5rem;
   font-weight: 300;
-  width: 10rem;
   color: #FFFFFF;
   border: none;
   cursor: pointer;
@@ -449,25 +470,20 @@ nav {
   }
 }
 .faq {
-  display: flex;
-  align-items: center;
   margin-right: 10%;
-  flex-direction: column;
   margin-top: 10%;
   margin-left: 10%;
 }
 
 .flex-container {
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .flex-item {
-  width: 35%;
+  width: 25%;
   min-width: 350px;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 8px;
 }
 
 .faq-img-container {
@@ -481,7 +497,7 @@ nav {
   right: 15rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .faq {
     text-align: center;
     margin-top: 10vh;
@@ -496,13 +512,13 @@ nav {
   }
 
   .flex-item {
-    width: 100%;
+    width: auto;
+    min-width: auto;
     padding: 0.5rem;
   }
 }
 .sponsors {
   display: flex;
-  align-items: center;
   margin-right: 10%;
   flex-direction: column;
   margin-top: 15%;
@@ -546,7 +562,6 @@ nav {
 }
 .contact {
   display: flex;
-  align-items: center;
   margin-right: 10%;
   flex-direction: column;
   margin-top: 15%;
@@ -589,8 +604,7 @@ nav {
   }
 }
 .mobile-links {
-  display: none;
-  height: 11rem;
+  margin-top: 100px;
   width: 100%;
   background-color: black;
   border-top-left-radius: 4rem;

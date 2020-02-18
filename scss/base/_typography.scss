@@ -12,12 +12,12 @@
 }
 
 .subheader {
-    @include typography( regular, $size3);
+    @include typography(normal, $size3);
     font-family: "Sofia-Pro";
 }
 
 .quote {
-    @include typography( regular, $size2);
+    @include typography(normal, $size2);
     font-style: italic;
 }
 
@@ -26,15 +26,15 @@
 }
 
 .body {
-    @include typography( regular, $size2);
+    @include typography(normal, $size2);
 }
 
 .secondary-body {
-    @include typography( regular, $size1);
+    @include typography(normal, $size1);
 }
 
 .button-text {
-    @include typography( bold,  $size2);
+    @include typography(bold,  $size2);
     font-family: "Sofia-Pro";
 }
 

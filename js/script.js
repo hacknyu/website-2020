@@ -1,4 +1,4 @@
-const navSlide = () => {
+function initMobileNav() {
     const burger = document.querySelector(".nav-burger")
     const nav = document.querySelector(".nav-links")
     const navLinks = document.querySelectorAll(".nav-links li")
@@ -16,32 +16,26 @@ const navSlide = () => {
     })
 }
 
-const toggletNavBar = () => {
+function handleURLChange() {
+    const navLinks = document.querySelectorAll(".nav-links a")
 
-    const navLinks = document.querySelectorAll(".nav-links span")
-    const sections = document.querySelectorAll(".tab")
-    
-    sections.forEach((section) => {
-        section.style.display = 'none'
-    })
+    for (let link of navLinks) {        
+        console.log(link.href)
+        const hashIndex = link.href.indexOf('#')
+        const hash = link.href.substring(hashIndex)
+        console.log(hash)
 
-    sections[0].style.display = 'flex'
-
-    navLinks.forEach(function(link, index){
-        link.addEventListener("click", () => {
-            sections.forEach((section) => {
-                    section.style.display = 'none'
-                    })
-            sections[index].style.display = 'flex'
-
-            
-            navLinks.forEach(function(l, ind){
-                navLinks[ind].classList.remove("navlink-active-orange")
-            })
-            navLinks[index].classList.toggle("navlink-active-orange")
-        })
-    })
+        link.classList.remove("navlink-active-orange")
+        if (hash == window.location.hash) {
+            link.classList.toggle("navlink-active-orange")
+        }
+    }
 }
 
-navSlide()
-toggletNavBar()
+function main() {
+    window.onhashchange = handleURLChange
+    initMobileNav()
+}
+
+main()
+

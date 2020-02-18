@@ -34,6 +34,16 @@ ul {
   display: flex;
   align-items: center;
   animation: fadein 0.3s ease-in-out;
+  overflow-x: hidden;
+}
+
+.content {
+  padding-left: 420px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 }
 
 .orange {
@@ -50,4 +60,12 @@ ul {
   } to {
     opacity: 1;
   }
+}
+
+.btn {
+  padding: 1em 2em;
+  color: white;
+  background: $orange;
+  font-family: inherit;
+  font-size: 18px;
 }
