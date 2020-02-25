@@ -1,10 +1,7 @@
 .schedule {
     display: flex;
-    align-items: center;
     margin-right:10%;
-    flex-direction: column;
-    margin-top: 10%;
-    margin-left: 10vw;
+    margin-left: 3vw;
 
     section {
         width: 800px;
@@ -16,7 +13,7 @@
 
     li {
         display: flex;
-        width: 80%;
+        width: 100%;
     }
 
     span {

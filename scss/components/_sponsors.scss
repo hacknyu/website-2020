@@ -2,36 +2,25 @@
     display: flex;
     margin-right:10%;
     flex-direction: column;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 5%;
-    text-align: left;
 
-    &-img {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    h4, li {
-        margin: 0.8rem 0;
-    }
-
-    li {
+    .flex-container {
         display: flex;
-        width: 80%;
+        flex-wrap: wrap;
+        padding: 2rem 0;
     }
+    
+    .flex-item {
+        width: 20%;
+        max-width:500px;
+        padding: 15px;
 
-    span {
-        text-align: left;
+        img {
+            max-width:100%;
+            max-height:100%;
+        }
     }
-
-    .small-grow {
-       width:20%;
-    }
-
-    .medium-grow {
-        width:40%;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -43,6 +32,12 @@
         &-img {
             width: 20rem;
             height: 20rem;
+        }
+
+        .flex-item {
+            width: 100%;
+            max-height: 150px;
+            margin-bottom: 10px;
         }
 
         span {

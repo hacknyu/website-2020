@@ -2,10 +2,9 @@
 .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 3vw;
     margin-right:15%;
-    margin-left: 10%;
-    margin-top:15%;
+    margin-top:10%;
 
     p{
         margin: 0;
@@ -24,9 +23,9 @@
     .about {
         margin-top:10vh;
         flex-direction: column;
-        align-items: center;
-        width: 80%;
         margin-bottom: 10vh;
+        text-align: center;
+        margin: 3vw auto;
 
         &-img {
             display: none;
