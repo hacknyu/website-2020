@@ -12,3 +12,19 @@
 @import "../scss/components/contact.scss";
 @import "../scss/components/mediaQuery";
 @import "../scss/components/mobileLinks";
+
+#day-of {
+  margin-left: 3vw;
+  margin-right: 15%;
+  margin-top: 15vh;
+
+  a {
+    color: $orange;
+  }
+}
+
+#prizes {
+  margin-left: 3vw;
+  margin-right: 15%;
+  margin-top: 10%;
+}
