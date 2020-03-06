@@ -54,6 +54,7 @@ function handleScroll() {
         navLinks.map((link) => link.classList.remove("navlink-active-orange"))
         newLink.classList.add("navlink-active-orange")
         currentLink = newLink
+        window.history.pushState("", currentSection.id, '#' + currentSection.id)
     }
 }
 
