@@ -10,6 +10,13 @@ nav {
     margin-top:25vh;
     margin-left:10vw;
     min-height: 25rem;
+    li {
+        list-style: none;
+    }
+
+    ul {
+        padding-inline-start: 0;
+    }
 }
 
 .nav-links {

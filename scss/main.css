@@ -11,16 +11,11 @@ body {
   margin: 0;
   background-color: #FFE29D;
   font-family: 'Sofia-Pro'; }
-  body li {
-    list-style: none; }
 
 h1, h2, h3 {
   font-family: 'Cooper-Regular';
   margin: 0;
   padding: 0; }
-
-ul {
-  padding-inline-start: 0; }
 
 .body-container {
   display: flex;
@@ -117,6 +112,10 @@ nav {
   margin-top: 25vh;
   margin-left: 10vw;
   min-height: 25rem; }
+  nav li {
+    list-style: none; }
+  nav ul {
+    padding-inline-start: 0; }
 
 .nav-links {
   display: flex;
