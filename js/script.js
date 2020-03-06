@@ -32,13 +32,13 @@ function handleURLChange() {
     }
 }
 
+let scrollTimeout
+let currentLink
+
 function handleScroll() {
     const navLinks = [...document.querySelectorAll(".nav-links a")]
     const sections = [...document.querySelectorAll(".tab")].sort((el1, el2) => el1.offsetTop - el2.offsetTop)
-
     let currentSection = sections[0]
-
-    navLinks.map((link) => link.classList.remove("navlink-active-orange"))
 
     // console.log(window.scrollY)
     for (let sec of sections) {
@@ -48,13 +48,21 @@ function handleScroll() {
     }
 
     // console.log(currentSection)
-    navLinks.filter((link) => link.href.split('#')[1] == currentSection.id)[0]
-            .classList.add("navlink-active-orange")
+    const newLink = navLinks.filter((link) => link.href.split('#')[1] == currentSection.id)[0]
+
+    if (newLink && newLink !== currentLink) {
+        navLinks.map((link) => link.classList.remove("navlink-active-orange"))
+        newLink.classList.add("navlink-active-orange")
+        currentLink = newLink
+    }
 }
 
 function main() {
     window.onhashchange = handleURLChange
-    window.onscroll = handleScroll
+    window.onscroll = () => {
+        window.clearTimeout(scrollTimeout)
+        scrollTimeout = window.setTimeout(handleScroll, 50)
+    }
     initMobileNav()
 }
 
