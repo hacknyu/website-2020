@@ -511,5 +511,16 @@ nav {
 @media screen and (max-width: 768px) {
   .mobile-links {
     display: flex; } }
+#day-of {
+  margin-left: 3vw;
+  margin-right: 15%;
+  margin-top: 15vh; }
+  #day-of a {
+    color: #EA591A; }
+
+#prizes {
+  margin-left: 3vw;
+  margin-right: 15%;
+  margin-top: 10%; }
 
 /*# sourceMappingURL=main.css.map */
